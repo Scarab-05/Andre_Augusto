@@ -9,18 +9,17 @@
     <body>
         <header>
             <h1>Elton Jorge LDA</h1>
-            <nav>
-                <ul>
-                    <li><a href="#serviços">Serviço</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
         </header>
-        <main>
+        <main class="main-flex">
             <section id="serviços">
                 <h2>Serviços</h2>
-                <input type="text" id="novo-produto" placeholder="Novo serviço">
-                <button id="adicionar-produto"type="button">Adicionar</button>
+                <form id="servico-form" novalidate>
+                    <div class="form-group">
+                        <label for="novo-produto">Novo serviço:</label>
+                        <input type="text" id="novo-produto" name="novo-produto" placeholder="Novo serviço" required>
+                    </div>
+                    <button id="adicionar-produto" type="submit">Adicionar</button>
+                </form>
                 <ul id="lista-servicos"></ul>
             </section>
             <section id="contato">
